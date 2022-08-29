@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@800&family=Roboto:ital,wght@1,700&display=swap');
+
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+    }
+    
+    .myClass:before {
+        font-family: FontAwesome;
+        content: "\f024";
+    }
+/* FORMULARIO ==========================*/   
+     
+
+.form_wrap{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    margin-top: 240px; 
+    align-items: center;
+    
+    background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.body{
+    width: 100%;
+    height: 600px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.focus{
+    outline: none;
+}
+
+
+.logo-progresando{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.presentacion-container p{
+    width: 100%;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.presentacion-nombre{
+    display: flex;
+    text-align: right;
+    padding: 5px 50px 10px 6px;
+    
+}
+.presentacion-nombre em{
+    width: 100%;
+    text-align: right;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+form.form_proyecto h2{
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form.form_proyecto .user_info{
+    width: 100%;
+    background: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: block;
+}
+
+form.form_proyecto label{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_proyecto input{
+    width: 300px;
+    padding: 12px;
+    background: white;
+    padding-bottom: 7px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.form_proyecto input {
+    min-height: 40px;
+    max-height: 269px;
+    max-width: 100%;
+}
+
+.form_proyecto textarea{
+    width: 500px;
+    height: 160px;
+    background: white;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: block;
+    margin-top: 10px;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+.form_proyecto textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+form.form_proyecto input[type="submit"]{
+    width: 500px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    min-height: 34px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.bases-condiciones h4 {
+    display: block;
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -15px;
+    margin-top: 70px;
+    font-size: 22px;
+}
+
+.bases-condiciones em{
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    margin-top: -18px;
+}
+
+.ByC-parrafos {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0,7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    margin: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p::before{
+    content: "\f00d";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    color: #e25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    background: black;
+    color: #fff;
+    cursor: pointer; 
+
+}
+
+/* MENSAJE EXITOSO*/
+
+.mensaje-exito{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.mensaje-exito h1{
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mensaje-exito a{
+    display: block;
+    padding: 10px 30px;
+    background: #4091ec;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mensaje-exito a:hover{
+    background: #337b;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:900px){
+    .head{
+        background-position: center;
+    }
+    
+    .presentacion-text{
+        background-position: center;
+        display: block;
+    }
+    
+    .form_proyecto input{
+        display: block;
+        align-items: center;
+    }
+
+    .form_group{
+        display: block;
+        align-items: center;
+    }
+
+    .contenedor{
+        width: 90%;
+    }
+
+    .body{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    
+    .presentacion-container p{
+        display: block;
+        font-size: 16px;
+        align-items: center;
+    }
+    .presentacion-nombre em{
+        display:block;
+        font-size: 16px;
+        text-align: right;
+        align-items: center;
+    }
+
+    .presentacion-nombre {
+        display: flex;
+        text-align: right;
+        padding: 5px 0px 10px 250px;
+    }
+
+    .font-weight-bolder{
+        display:block;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .form_proyecto h2{
+        width: 80%;
+}
+
+.form_group{
+    align-items: center;
+    display: block;
+    align-items: center;
+}
+
+
+.form_proyecto input {
+    width: 300px;
+    display: block;
+}
+
+.input[type="submit"]{
+    padding: 20px 20px 20px 20px;
+}
+
+.form_proyecto textarea{
+    width: 400px;
+    display: block;
+}
+
+.bases-condiciones p {
+        font-size: 16px;
+        display: block;
+        align-items: center;
+    }
+    .ByC-parrafos{
+        display: block;
+        font-size: 16px;
+        align-items: center;
+        font-family: 'Montserrat' sans-serif; 
+    }
+
+}
+
+
+@media screen and (max-width:300px){
+    
+    
+    .body{
+        display: block;
+        font-size: 14px;
+        align-items: center;
+        font-family: 'Montserrat' sans-serif; 
+    }
+    
+    .presentacion-container p{
+        display: block;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .presentacion-nombre {
+        display: flex;
+        text-align: right;
+        padding: 5px 0px 10px 100px;
+    }
+
+    .ByC-parrafos{
+        display: block;
+        font-size: 14px;
+        align-items: center;
+        font-family: 'Montserrat' sans-serif; 
+    }
+    
+    .presentacion-nombre em{
+        display:block;
+        font-size: 14px;
+        text-align: right;
+        align-items: center;
+    }
+    
+}
